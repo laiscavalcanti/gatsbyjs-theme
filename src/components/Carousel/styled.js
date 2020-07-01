@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 
 export const CarouselWrapper = styled.section`
   margin-top: 5rem;
+
   ${media.lessThan("large")`
     display: flex;
     flex-direction: column;
@@ -88,7 +89,7 @@ export const CarouselWrapper = styled.section`
         }
       }
       .swiper-pagination-bullet-active {
-        margin: 0 30px 0 0;
+        margin: 0px 30px 0 0;
         position: relative;
         opacity: 1;
 
@@ -113,18 +114,13 @@ export const CarouselLink = styled(AniLink)`
   display: flex;
   width: 100%;
   color: var(--black);
-  height: 37rem;
+  height: 30rem;
   padding: 0.5rem 0rem 3rem 0rem;
-  ${media.lessThan("large")`
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    height: 40rem;
-`}
 `
 export const CarouselImage = styled(Img)`
+  position: relative;
   display: flex;
-  width: 40%;
+  width: 100%;
   height: 30rem;
   ${media.lessThan("large")`
     display: flex;
@@ -133,6 +129,7 @@ export const CarouselImage = styled(Img)`
 `}
 `
 export const CarouselInfo = styled.section`
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-content: center;

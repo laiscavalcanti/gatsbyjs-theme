@@ -9,7 +9,7 @@ export const SideBarWrapper = styled.ul`
   left: 0;
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 1;
   width: 100%;
   height: 9rem;
   ${media.lessThan("large")`

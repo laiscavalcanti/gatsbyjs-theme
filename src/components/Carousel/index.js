@@ -17,10 +17,10 @@ class Slideshow extends React.Component {
       {
         spaceBetween: 30,
         centeredSlides: true,
-        autoplay: {
+        /*autoplay: {
           delay: 4500,
           disableOnInteraction: false,
-        },
+        },*/
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -47,21 +47,18 @@ class Slideshow extends React.Component {
                       duration={0.5}
                       bg={getThemeColor()}
                     >
-                      <S.CarouselInfo>
-                        <S.CarouselTitle>
-                          {post.frontmatter.title}
-                        </S.CarouselTitle>
-                        <S.CarouselAuthor>
-                          {post.frontmatter.author}
-                        </S.CarouselAuthor>
-                        <S.CarouselDescription>
-                          {post.frontmatter.description}
-                        </S.CarouselDescription>
-                      </S.CarouselInfo>
                       <S.CarouselImage
                         fluid={post.frontmatter.image.childImageSharp.fluid}
                         alt="pictures-slide"
                       />
+                      <S.CarouselInfo>
+                        <S.CarouselTitle>
+                          {post.frontmatter.title}
+                        </S.CarouselTitle>
+                        <S.CarouselDescription>
+                          {post.frontmatter.description}
+                        </S.CarouselDescription>
+                      </S.CarouselInfo>
                     </S.CarouselLink>
                   </div>
                 ))}
@@ -85,6 +82,7 @@ export default () => (
     query={graphql`
       query {
         allMarkdownRemark(
+          sort: { fields: frontmatter___date, order: DESC }
           filter: { frontmatter: { templateKey: { eq: "slideshow" } } }
         ) {
           edges {

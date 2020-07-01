@@ -11,9 +11,7 @@ const Layout = ({ children }) => {
   return (
     <S.LayoutWrapper>
       <GlobalStyles />
-
       <Header />
-
       <S.LayoutMain>{children}</S.LayoutMain>
       <Footer />
     </S.LayoutWrapper>
