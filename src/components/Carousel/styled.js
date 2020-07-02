@@ -4,24 +4,21 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Img from "gatsby-image"
 
 export const CarouselWrapper = styled.section`
+  display: flex;
+  width: 100%;
   margin-top: 5rem;
-
   ${media.lessThan("large")`
     display: flex;
     flex-direction: column;
 `}
   .swiper-container {
-    display: flex;
     font-size: 18px;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     width: 100%;
     z-index: 0;
   }
 
   .slideshow {
-    display: flex;
     text-align: left;
     width: 100%;
     height: 100%;
@@ -41,9 +38,12 @@ export const CarouselWrapper = styled.section`
     }
 
     .swiper-pagination {
-      bottom: 10px;
+      position: relative;
+      margin-top: 2rem;
+      bottom: 0px;
 
       .swiper-pagination-bullet {
+        position: relative;
         background: transparent !important;
         width: auto;
         opacity: 0.5;
@@ -89,7 +89,7 @@ export const CarouselWrapper = styled.section`
         }
       }
       .swiper-pagination-bullet-active {
-        margin: 0px 30px 0 0;
+        margin: 20px 30px 0 0;
         position: relative;
         opacity: 1;
 
@@ -98,10 +98,10 @@ export const CarouselWrapper = styled.section`
           width: 30px;
           position: absolute;
           left: 25px;
-          top: 26px;
+          top: 40px;
         }
         &:last-child {
-          margin: 0 8px 0 0;
+          margin: 50px 8px 0 0;
           &:after {
             display: none;
           }
@@ -111,8 +111,6 @@ export const CarouselWrapper = styled.section`
   }
 `
 export const CarouselLink = styled(AniLink)`
-  display: flex;
-  width: 100%;
   color: var(--black);
   height: 30rem;
   padding: 0.5rem 0rem 3rem 0rem;
@@ -123,6 +121,7 @@ export const CarouselImage = styled(Img)`
   width: 100%;
   height: 30rem;
   ${media.lessThan("large")`
+  position: realtive;
     display: flex;
     width: 100%;
     height: 22rem;
@@ -133,13 +132,14 @@ export const CarouselInfo = styled.section`
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 3rem 0 0 0;
-  width: 60%;
+  margin: 3rem 1rem 0 1rem;
+  width: 40%;
   left: 20px;
   bottom: 20px;
   font-family: "Oswald", sans-serif;
 
   ${media.lessThan("large")`
+  position: absolute;
     display: flex;
     width: 100%;
     margin: 1.5rem 0.5rem 0 0.5rem;
@@ -176,7 +176,7 @@ export const CarouselTitle = styled.h1`
   font-weight: 700;
   line-height: 50px;
   background-color: #be1622;
-  color: lightgray;
+  color: #ffffff;
   ${media.lessThan("large")`
     width: 100%;
     margin: 1rem 0.5rem 0 0.3rem;
