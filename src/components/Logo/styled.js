@@ -6,7 +6,7 @@ export const LogoWrapper = styled.div`
   height: 10rem;
   padding: 0;
   ${media.lessThan("large")`
-    max-width: 14rem;
+    max-width: 10rem;
     margin-left: 0.5rem;
   `}
 `

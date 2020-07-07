@@ -1,11 +1,9 @@
-import React from "react"
-//import styled from "styled-components"
+import React, {useState} from "react"
 import Logo from "../Logo"
 import * as S from "./styled"
 import NavBar from "../NavBar"
-//import NavBar from "../NavBar"
-//import ButtonTheme from "../ButtonTheme"
-//import MenuToggle from "./Toggle"
+import ButtonTheme from "../ButtonTheme"
+
 
 /*const handleClick = event => {
   const menu = document.querySelector(".menu-toggle")
@@ -13,7 +11,7 @@ import NavBar from "../NavBar"
   event.target.parentNode.classList.toggle("toggle")
 }*/
 
-const resizeHeaderOnScroll = () => {
+/*const resizeHeaderOnScroll = () => {
   const distanceY = window.pageYOffset || document.documentElement.scrollTop,
     shrinkOn = 200,
     headerEl = document.querySelector(".header")
@@ -25,12 +23,34 @@ const resizeHeaderOnScroll = () => {
   }
 }
 window.addEventListener("scroll", resizeHeaderOnScroll)
+*/
 
 const Header = () => {
+  const [navbarOpen, setNavbarOpen] = useState(false)
   return (
-    <S.SideBarWrapper className="header">
-      <NavBar className="header" />
-      <S.LogoItem className="header">
+    <S.SideBarWrapper>
+     
+      <S.NavWrapper>
+        <S.Toggle navbarOpen={navbarOpen} onClick={() => setNavbarOpen(!navbarOpen)}>
+          {navbarOpen ? <S.Hamburger open /> : <S.Hamburger />}
+        </S.Toggle>
+        {navbarOpen ? (
+          <S.NavBox>
+            <NavBar />
+            <S.WrapperButtonTheme>
+              <ButtonTheme />
+            </S.WrapperButtonTheme>
+          </S.NavBox>
+        ) : (
+          <S.NavBox open>
+            <NavBar />
+            <S.WrapperButtonTheme>
+              <ButtonTheme />
+            </S.WrapperButtonTheme>
+          </S.NavBox>
+        )}
+      </S.NavWrapper>
+      <S.LogoItem>
         <Logo />
       </S.LogoItem>
     </S.SideBarWrapper>
