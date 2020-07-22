@@ -30,7 +30,7 @@ export const WrapperLight = styled.p`
   height: auto;
   margin: 1rem;
   padding: 1rem;
-  color: red;
+  color: #be1622;
   ${media.lessThan("large")`
     height:10px;
     width: 10px;

@@ -94,6 +94,8 @@ export const NavWrapper = styled.nav`
 `
 export const LogoItem = styled(Link)`
   display: flex;
+  justify-content: center;
+  margin-right: 2rem;
   margin-top: 0.5rem;
   ${media.lessThan("large")`
    display: flex;
@@ -104,7 +106,8 @@ export const LogoItem = styled(Link)`
 `
 export const WrapperButtonTheme = styled.section`
   display: flex;
-  margin-bottom: 0rem;
+  margin-left: -1.5rem;
+  margin-bottom: -1rem;
   ${media.lessThan("large")`
     margin-left: -7.5rem;
     margin-top: -2rem;
