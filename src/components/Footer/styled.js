@@ -7,9 +7,9 @@ export const MenuBarWrapper = styled.aside`
   align-items: flex-end;
   justify-content: center;
   margin-top: 5rem;
-  height: 6.5rem;
+  height: 7.5rem;
   width: 100%;
-  background-color: var(--sameColorBlack);
+  background-color: tomato;
   ${media.lessThan("large")`
   display: flex;
   justify-content: flex-start;

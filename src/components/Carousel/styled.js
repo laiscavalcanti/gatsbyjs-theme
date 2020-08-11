@@ -19,6 +19,7 @@ export const CarouselWrapper = styled.section`
   }
 
   .slideshow {
+    display: flex;
     text-align: left;
     width: 100%;
     height: 100%;
@@ -28,7 +29,6 @@ export const CarouselWrapper = styled.section`
     .swiper-button-next,
     .swiper-button-prev {
       color: #be1622;
-
       cursor: pointer;
       ${media.lessThan("large")`
         width: 20px;
@@ -38,8 +38,7 @@ export const CarouselWrapper = styled.section`
     }
 
     .swiper-pagination {
-      position: relative;
-      margin-top: 2rem;
+  
       bottom: 0px;
 
       .swiper-pagination-bullet {
@@ -111,6 +110,8 @@ export const CarouselWrapper = styled.section`
   }
 `
 export const CarouselLink = styled(AniLink)`
+ display: flex;
+  width: 100%;
   color: var(--black);
   height: 30rem;
   padding: 0.5rem 0rem 3rem 0rem;

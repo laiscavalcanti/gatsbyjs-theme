@@ -8,7 +8,7 @@ export const SideBarWrapper = styled.header`
   left: 0;
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 1;
   width: 100%;
   height: 8.5rem;
   position: fixed;
@@ -91,6 +91,7 @@ export const NavWrapper = styled.nav`
   align-items: start;
   width: 100%;
   position: relative;
+  z-index: 1;
 `
 export const LogoItem = styled(Link)`
   display: flex;
