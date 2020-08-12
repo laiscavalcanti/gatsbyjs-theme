@@ -3,7 +3,7 @@ import media from "styled-media-query"
 
 export const GridWrapper = styled.section`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: var(--background-color);
   margin-top: 1.2rem;
   ${media.lessThan("large")`

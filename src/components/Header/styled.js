@@ -1,3 +1,4 @@
+
 import styled from "styled-components"
 import media from "styled-media-query"
 import { Link } from "gatsby"
@@ -8,7 +9,7 @@ export const SideBarWrapper = styled.header`
   left: 0;
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 1;
   width: 100%;
   height: 8.5rem;
   position: fixed;
@@ -60,7 +61,6 @@ export const Hamburger = styled.div`
   border-radius: 2px;
   margin-left: 3rem;
   transform: ${props => (props.open ? "rotate(-45deg)" : "inherit")};
-
   ::before,
   ::after {
     width: 30px;
@@ -71,12 +71,10 @@ export const Hamburger = styled.div`
     position: absolute;
     transition: all 0.3s linear;
   }
-
   ::before {
     transform: ${props => (props.open ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)")};
     top: -10px;
   }
-
   ::after {
     opacity: ${props => (props.open ? "0" : "1")};
     transform: ${props => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
@@ -91,6 +89,7 @@ export const NavWrapper = styled.nav`
   align-items: start;
   width: 100%;
   position: relative;
+  z-index: 1;
 `
 export const LogoItem = styled(Link)`
   display: flex;

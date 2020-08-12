@@ -17,13 +17,14 @@ export const PostItemLink = styled(AniLink)`
 `
 export const PostItemWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
 `
 export const PostItemInfo = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
   max-width: 20.5rem;
   margin: 0 0 0 1rem;
@@ -62,13 +63,16 @@ export const PostItemImg = styled(Img)`
 `
 export const PostItemTitle = styled.h1`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   text-align: left;
   font-family: "Oswald", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
-  margin: 0.7rem 0rem 0.9rem 0rem;
+  margin: 0.7rem 1rem 0.9rem 0rem;
+  background-color: #be1622;
+  color: #fff;
+  height: 30px;
   ${media.lessThan("large")`
     font-size: 1rem;
     line-height: 1.1;
@@ -101,7 +105,7 @@ export const PostItemDescription = styled.p`
   justify-content: flex-start;
   text-align: left;
   margin: 0.8rem 0 0 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 300;
   font-family: "Oswald", sans-serif;
   line-height: 1.3;

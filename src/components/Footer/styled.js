@@ -6,10 +6,13 @@ export const MenuBarWrapper = styled.aside`
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  margin-top: 5rem;
-  height: 6.5rem;
+  margin-top: 3rem;
+  height: 3 .5rem;
   width: 100%;
   background-color: var(--sameColorBlack);
+  border-top: solid 1px rgb(0,0,0, 0.3);
+  opacity: 0.7;
+
   ${media.lessThan("large")`
   display: flex;
   justify-content: flex-start;
