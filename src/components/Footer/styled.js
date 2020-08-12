@@ -6,6 +6,7 @@ export const MenuBarWrapper = styled.aside`
   display: flex;
   align-items: flex-end;
   justify-content: center;
+<<<<<<< HEAD
   margin-top: 3rem;
   height: 3 .5rem;
   width: 100%;
@@ -13,6 +14,12 @@ export const MenuBarWrapper = styled.aside`
   border-top: solid 1px rgb(0,0,0, 0.3);
   opacity: 0.7;
 
+=======
+  margin-top: 5rem;
+  height: 7.5rem;
+  width: 100%;
+  background-color: tomato;
+>>>>>>> f973c846b99daacbdd20fe7ad80d4fd036d750b3
   ${media.lessThan("large")`
   display: flex;
   justify-content: flex-start;

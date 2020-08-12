@@ -11,7 +11,7 @@ import ButtonTheme from "../ButtonTheme"
   event.target.parentNode.classList.toggle("toggle")
 }*/
 
-/*const resizeHeaderOnScroll = () => {
+const resizeHeaderOnScroll = () => {
   const distanceY = window.pageYOffset || document.documentElement.scrollTop,
     shrinkOn = 200,
     headerEl = document.querySelector(".header")
@@ -23,7 +23,7 @@ import ButtonTheme from "../ButtonTheme"
   }
 }
 window.addEventListener("scroll", resizeHeaderOnScroll)
-*/
+
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
