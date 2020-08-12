@@ -6,8 +6,8 @@ import SEO from "../components/seo"
 const NotFoundPage = () => (
   <Layout>
     <SEO title="Termos de Uso" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <h1>Termos de Uso</h1>
+    <p>Aqui estão os termos de uso.</p>
   </Layout>
 )
 
