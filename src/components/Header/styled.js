@@ -4,15 +4,13 @@ import media from "styled-media-query"
 import { Link } from "gatsby"
 
 export const SideBarWrapper = styled.header`
+  .header{
   display: flex;
-  justify-content: space-around;
-  left: 0;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  width: 100%;
-  height: 8.5rem;
-  position: fixed;
+  justify-content: space-around  }
+
+  .smaller{
+    background-color: blue;
+  }
  
   ${media.lessThan("large")`
    height: 5rem;
@@ -28,18 +26,21 @@ export const Toggle = styled.div`
   cursor: pointer;
   padding: 0 8vw;
   display: none;
+
   @media (max-width: 768px) {
     display: flex;
+    z-index: 1;
   }
 `
-
 export const NavBox = styled.div`
   display: flex;
   height: 100%;
   justify-content: flex-end;
   align-items: center;
+  z-index: 1;
   @media (max-width: 768px) {
     flex-direction: column;
+    z-index: 1;
     position: fixed;
     width: 100%;
     justify-content: flex-start;
@@ -61,6 +62,7 @@ export const Hamburger = styled.div`
   border-radius: 2px;
   margin-left: 3rem;
   transform: ${props => (props.open ? "rotate(-45deg)" : "inherit")};
+  z-index: 1;
   ::before,
   ::after {
     width: 30px;
@@ -85,18 +87,25 @@ export const Hamburger = styled.div`
 export const NavWrapper = styled.nav`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: start;
   width: 100%;
-  position: relative;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
   z-index: 1;
+  height: 8rem;
+  
+  background-color: white;
+
 `
 export const LogoItem = styled(Link)`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   margin-right: 2rem;
-  margin-top: 0.5rem;
   ${media.lessThan("large")`
+  margin-top: 0.5rem;
    display: flex;
    width: 60%;
    flex-direction: column;

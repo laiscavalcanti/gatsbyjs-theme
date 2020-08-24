@@ -5,19 +5,22 @@ import Img from "gatsby-image"
 
 export const CarouselWrapper = styled.section`
   display: flex;
+  justify-content: center;
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 4rem;
   ${media.lessThan("large")`
     display: flex;
     flex-direction: column;
 `}
   .swiper-container {
+    display: flex;
     font-size: 18px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 100%;
     z-index: 0;
   }
-
   .slideshow {
     display: flex;
     text-align: left;
@@ -39,7 +42,7 @@ export const CarouselWrapper = styled.section`
 
     .swiper-pagination {
   
-      bottom: 0px;
+      bottom: 10px;
 
       .swiper-pagination-bullet {
         position: relative;
@@ -88,7 +91,7 @@ export const CarouselWrapper = styled.section`
         }
       }
       .swiper-pagination-bullet-active {
-        margin: 20px 30px 0 0;
+        margin: 0px 30px 0 0;
         position: relative;
         opacity: 1;
 
@@ -100,7 +103,7 @@ export const CarouselWrapper = styled.section`
           top: 40px;
         }
         &:last-child {
-          margin: 50px 8px 0 0;
+          margin: 0px 8px 0 0;
           &:after {
             display: none;
           }
@@ -115,6 +118,7 @@ export const CarouselLink = styled(AniLink)`
   color: var(--black);
   height: 30rem;
   padding: 0.5rem 0rem 3rem 0rem;
+
 `
 export const CarouselImage = styled(Img)`
   position: relative;
@@ -122,7 +126,7 @@ export const CarouselImage = styled(Img)`
   width: 100%;
   height: 30rem;
   ${media.lessThan("large")`
-  position: realtive;
+  position: relative;
     display: flex;
     width: 100%;
     height: 22rem;
