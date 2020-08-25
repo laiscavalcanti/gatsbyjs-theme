@@ -5,9 +5,9 @@ import { Link } from "gatsby"
 
 export const SideBarWrapper = styled.header`
   .header{
-  display: flex;
-  justify-content: space-around  }
-
+    display: flex;
+    justify-content: space-between; 
+    }
   .smaller{
     background-color: blue;
   }
@@ -87,7 +87,7 @@ export const Hamburger = styled.div`
 export const NavWrapper = styled.nav`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: start;
   width: 100%;
   position: fixed;
@@ -96,7 +96,6 @@ export const NavWrapper = styled.nav`
   right: 0;
   z-index: 1;
   height: 8rem;
-  
   background-color: white;
 
 `

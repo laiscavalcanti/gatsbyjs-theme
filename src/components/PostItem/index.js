@@ -12,13 +12,12 @@ const PostItem = ({ slug, description, title, image, date, tags, author }) => (
     bg={getThemeColor()}
   >
     <S.PostItemWrapper>
-      <S.PostItemImg fluid={image} className=".img" />
+      <S.PostItemImg fluid={image} className="img" />
       <S.PostItemInfo>
         <S.PostItemDate>
           {date} - {tags}
         </S.PostItemDate>
         <S.PostItemTitle>{title}</S.PostItemTitle>
-        <S.PostItemAuthor>{author}</S.PostItemAuthor>
         <S.PostItemDescription>{description}</S.PostItemDescription>
       </S.PostItemInfo>
     </S.PostItemWrapper>

@@ -4,14 +4,12 @@ import { Link } from "gatsby"
 
 export const LayoutNav = styled.nav`
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   height: auto;
-
   color: var(--samecolorWhite);
   ${media.lessThan("large")`
    display: flex;
    flex-direction: column;
-
   `}
 `
 export const LayoutList = styled.li`

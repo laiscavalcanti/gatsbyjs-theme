@@ -8,7 +8,7 @@ import RecommendedPosts from "../components/RecommendedPosts"
 import PostImage from "../components/PostImage"
 import scrollToTop from "../utils/scrollToTop"
 import { ArrowUpward as ArrowUp } from "@styled-icons/material-rounded/ArrowUpward"
-import { Tag } from "@styled-icons/boxicons-regular/Tag"
+import { Tag } from "@styled-icons/entypo/Tag"
 
 import * as S from "../components/Post/styled"
 
@@ -24,12 +24,13 @@ const BlogPost = ({ data, pageContext }) => {
         description={post.frontmatter.description}
         imagePost={post.frontmatter.imagePost}
       />
-      <PostImage imagePost={post.frontmatter.imagePost} />
       <S.PostHeader>
+      <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
+      <PostImage imagePost={post.frontmatter.imagePost} />
+      
         <S.PostDate>
           {post.frontmatter.date} • {post.timeToRead} min de leitura
         </S.PostDate>
-        <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
         <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
         <S.IconWrapper>
           <S.Icon>

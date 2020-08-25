@@ -4,8 +4,10 @@ import Img from "gatsby-image"
 
 export const PostImage = styled(Img)`
   display: block;
-  width: 100%;
+  width: 50%;
   height: 20rem;
+  margin-top: 3rem;
+  margin-left: 8.5rem;
   ${media.lessThan("large")`
     display: flex;
     width: 100%;
