@@ -4,11 +4,11 @@ import media from "styled-media-query"
 import Img from "gatsby-image"
 
 export const PostItemLink = styled(AniLink)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 32%;
+  padding-bottom: 32%; /* Same as width, sets height */
+  margin-bottom: 2%; /* (100-32*3)/2 */
+  position: relative;
   padding: 1rem 1rem 2rem 0rem;
-  width: 100%;
   color: var(--black);
   ${media.lessThan("large")`
   padding: 0.5rem 0 1rem 1rem;
@@ -64,7 +64,9 @@ export const PostItemImg = styled(Img)`
 export const PostItemTitle = styled.h1`
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: left;
+  flex-wrap: wrap;
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
@@ -72,7 +74,7 @@ export const PostItemTitle = styled.h1`
   margin: 0.7rem 1rem 0.9rem 0rem;
   background-color: #be1622;
   color: #fff;
-  height: 30px;
+  height: 60px;
   ${media.lessThan("large")`
     font-size: 1rem;
     line-height: 1.1;

@@ -44,6 +44,7 @@ export const PostTag = styled(Link)`
 `
 export const PostTitle = styled.h1`
   text-align: start;
+  max-width: 40rem;
   margin: 5rem 0.5rem 0.5rem 7.5rem;
   padding: 0 1rem 0 1rem;
   font-family: "Oswald", sans-serif;

@@ -4,8 +4,11 @@ import media from "styled-media-query"
 export const GridWrapper = styled.section`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background-color: var(--background-color);
-  margin-top: 1.2rem;
+  margin-top: 3rem;
+
   ${media.lessThan("large")`
   margin-top: 1rem;
 `}

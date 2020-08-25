@@ -4,8 +4,10 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const RecommendedWrapper = styled.section`
   display: flex;
+  justify-content: flex-start;
   border-top: 1px dashed var(--black);
-  margin: 0 8rem 0 8rem;
+  margin: 0 26.5rem 0 4rem;
+  line-height: 19px;
   background-color: var(--background-color);
   ${media.lessThan("large")`
     line-height: 1;
@@ -15,14 +17,15 @@ export const RecommendedWrapper = styled.section`
   `}
 `
 export const RecommendedLink = styled(AniLink)`
-  align-items: center;
   background: var(--background-color);
   color: var(--black);
   display: flex;
-  padding: 1rem;
+  justify-content: flex-start;
   text-decoration: none;
   transition: background 0.5s;
-  width: 50%;
+  width: 100%;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
   &::selection {
     color: var(--colorSelection);
     background: var(--backgroundSelection);

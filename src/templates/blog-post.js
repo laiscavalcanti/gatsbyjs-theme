@@ -27,7 +27,6 @@ const BlogPost = ({ data, pageContext }) => {
       <S.PostHeader>
       <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
       <PostImage imagePost={post.frontmatter.imagePost} />
-      
         <S.PostDate>
           {post.frontmatter.date} • {post.timeToRead} min de leitura
         </S.PostDate>
