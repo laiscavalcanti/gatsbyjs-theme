@@ -4,6 +4,7 @@ import getThemeColor from "../../utils/getThemeColor"
 import * as S from "./styled"
 
 const PostItem = ({ slug, description, title, image, date, tags, author }) => (
+  
   <S.PostItemLink
     to={slug}
     cover
@@ -11,6 +12,7 @@ const PostItem = ({ slug, description, title, image, date, tags, author }) => (
     duration={0.5}
     bg={getThemeColor()}
   >
+    <S.PostWrapper>
     <S.PostItemWrapper>
       <S.PostItemImg fluid={image} className="img" />
       <S.PostItemInfo>
@@ -21,7 +23,9 @@ const PostItem = ({ slug, description, title, image, date, tags, author }) => (
         <S.PostItemDescription>{description}</S.PostItemDescription>
       </S.PostItemInfo>
     </S.PostItemWrapper>
+    </S.PostWrapper>
   </S.PostItemLink>
+
 )
 
 PostItem.propTypes = {

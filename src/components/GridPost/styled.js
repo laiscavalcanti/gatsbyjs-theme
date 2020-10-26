@@ -7,15 +7,14 @@ export const GridWrapper = styled.section`
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: var(--background-color);
-  margin-top: 3rem;
-
+  margin-top: 1rem;
   ${media.lessThan("large")`
   margin-top: 1rem;
 `}
 `
 export const Line = styled.div`
-  border-top: 1px dashed var(--borders);
-  margin: 0.5rem 2rem 0rem 2rem;
+  border-top: 1px groove var(--borders);
+  margin: 01rem 2rem 0rem 2rem;
   ${media.lessThan("large")`
   margin: 0rem 2rem 0rem 2rem;
 `}

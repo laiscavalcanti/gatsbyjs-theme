@@ -41,20 +41,19 @@ export const CarouselWrapper = styled.section`
     }
 
     .swiper-pagination {
-  
-      bottom: 10px;
+      bottom: 0px;
 
       .swiper-pagination-bullet {
         position: relative;
         background: transparent !important;
         width: auto;
         opacity: 0.5;
+        
         &:focus {
           outline: none;
         }
         &:before {
           cursor: pointer;
-          margin: 0px 8px 0px 0;
           display: inline-block;
           width: 20px;
           font-size: 20px;
@@ -91,7 +90,7 @@ export const CarouselWrapper = styled.section`
         }
       }
       .swiper-pagination-bullet-active {
-        margin: 0px 30px 0 0;
+        margin: 10px 30px 0 0;
         position: relative;
         opacity: 1;
 
@@ -100,7 +99,7 @@ export const CarouselWrapper = styled.section`
           width: 30px;
           position: absolute;
           left: 25px;
-          top: 40px;
+          top: 70px;
         }
         &:last-child {
           margin: 0px 8px 0 0;
@@ -215,6 +214,7 @@ export const CarouselDescription = styled.span`
   font-family: "Montserrat", sans-serif;
   line-height: 1.3;
   background-color: lightgray;
+  color: var(--white);
   ${media.lessThan("large")`
     margin: 1rem 1rem 0 1rem;
     font-size: 1rem;

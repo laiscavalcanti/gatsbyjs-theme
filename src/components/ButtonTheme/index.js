@@ -13,7 +13,7 @@ const ButtonTheme = () => {
   }, [])
   return (
     <WrapperLight
-      title="Apagar a luz"
+      title="Acender a luz"
       onClick={() => {
         window.__setPreferredTheme(isLightMode ? "dark" : "light")
       }}

@@ -3,14 +3,15 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import media from "styled-media-query"
 import Img from "gatsby-image"
 
-export const PostItemLink = styled(AniLink)`
-  width: 32%;
-  padding-bottom: 32%; /* Same as width, sets height */
-  margin-bottom: 2%; /* (100-32*3)/2 */
-  position: relative;
-  padding: 1rem 1rem 2rem 0rem;
-  color: var(--black);
+export const PostWrapper = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 3rem;
   ${media.lessThan("large")`
+  flex-direction: column;
   padding: 0.5rem 0 1rem 1rem;
   margin-top: 2rem;
 `}
@@ -21,6 +22,16 @@ export const PostItemWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+`
+export const PostItemLink = styled(AniLink)`
+  width: 32%;
+  position: relative;
+  padding: 1rem 1rem 0rem 0rem;
+  color: var(--black);
+  ${media.lessThan("large")`
+  padding: 1rem 1rem 0rem 0rem;
+  width: 100%;
+`}
 `
 export const PostItemInfo = styled.div`
   display: flex;
@@ -36,7 +47,7 @@ export const PostItemInfo = styled.div`
   `}
 
   &:hover {
-    color: var(--backgroundSelection);
+    color: var(--colorHover);
     transition: opacity 0.6s, transform 0.3s;
   }
 `
@@ -49,12 +60,14 @@ export const PostItemImg = styled(Img)`
   -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 1;
   &:hover img {
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
     transform: scale(1.05);
+    opacity: 0.5;
   }
   ${media.lessThan("large")`
     min-height: 5rem;
@@ -68,17 +81,22 @@ export const PostItemTitle = styled.h1`
   text-align: left;
   flex-wrap: wrap;
   font-family: "Oswald", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: 1.2;
   margin: 0.7rem 1rem 0.9rem 0rem;
-  background-color: #be1622;
-  color: #fff;
+  background-color: var(--color);
+  color:var(--sameColorWhite);
   height: 60px;
+  max-width: 19rem;
+  &:hover {
+    background-color: transparent;
+    transition: opacity 0.6s, transform 0.3s;
+  }
   ${media.lessThan("large")`
     font-size: 1rem;
     line-height: 1.1;
-    margin: 0.7rem 0rem 0.6rem 0rem;
+    margin: 0.7rem 0.5rem 0.6rem 0rem;
   `}
 `
 export const PostItemAuthor = styled.p`
@@ -95,8 +113,8 @@ export const PostItemAuthor = styled.p`
 `
 export const PostItemDate = styled.section`
   display: flex;
-  justify-content: flex-start;
-  margin: 0rem 0.5rem 0rem 0rem;
+  justify-content: flex-end;
+  margin: 0.5rem 1.1rem 0rem 0rem;
   font-size: 0.7rem;
   ${media.lessThan("large")`
     font-size: 0.6rem;

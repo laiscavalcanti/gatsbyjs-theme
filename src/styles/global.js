@@ -32,7 +32,7 @@ body{
     --sameColorWhite: #fff;
     --borders: #222;
     --texts: #000000;
-    --color: #900020;
+    --color: #be1622;
     --background-color: #00000;
     --black:#222;
     --white:#191919;
@@ -48,7 +48,7 @@ body{
     --sameColorWhite: #fff;
     --borders: #fff;
     --texts: #fff;
-    --color: #900020;
+    --color: #be1622;
     --background-color: #191919;
     --black: #fff;
     --white:#191919;
@@ -57,6 +57,7 @@ body{
     --highlight: #ffd700;
     --colorSelection: #900020;
     --backgroundSelection: #fff;
+    --colorHover: #698eb4;
   }
 `
 export default GlobalStyles

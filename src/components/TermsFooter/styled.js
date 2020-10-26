@@ -1,5 +1,5 @@
 import styled from "styled-components"
-//import media from "styled-media-query"
+import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const WrapperLinksTerms = styled.section`
@@ -10,7 +10,7 @@ export const WrapperLinksTerms = styled.section`
 
 export const CopyRight = styled.p `
     font-size: 0.9rem;
-    color: black;
+    color: var(--black);
     opacity: 0.8;
     letter-spacing: 1px;
     margin-right: 0.5rem;
@@ -18,9 +18,8 @@ export const CopyRight = styled.p `
 
 export const LinkTerm = styled(AniLink)`
     font-size: 0.9rem;
-    color: black;
+    color: var(--black);
     opacity: 0.8;
     letter-spacing: 1px;
-    text-decoration: none;
     margin-left: 0.5rem;
 ` 
