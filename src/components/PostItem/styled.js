@@ -81,7 +81,7 @@ export const PostItemTitle = styled.h1`
   text-align: left;
   flex-wrap: wrap;
   font-family: "Oswald", sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
   margin: 0.7rem 1rem 0.9rem 0rem;

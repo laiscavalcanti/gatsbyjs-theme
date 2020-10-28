@@ -4,7 +4,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const WrapperLinksTerms = styled.section`
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: 1rem;
 `
 
@@ -23,3 +23,11 @@ export const LinkTerm = styled(AniLink)`
     letter-spacing: 1px;
     margin-left: 0.5rem;
 ` 
+export const DevelopBy = styled(AniLink)`
+    margin-left: 10rem;
+    text-decoration: none;
+`
+export const Contact = styled.p`
+    display: flex;
+    
+`

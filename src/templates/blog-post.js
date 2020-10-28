@@ -25,11 +25,11 @@ const BlogPost = ({ data, pageContext }) => {
         imagePost={post.frontmatter.imagePost}
       />
       <S.PostHeader>
-      <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
       <PostImage imagePost={post.frontmatter.imagePost} />
         <S.PostDate>
           {post.frontmatter.date} • {post.timeToRead} min de leitura
         </S.PostDate>
+        <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
         <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
         <S.IconWrapper>
           <S.Icon>
