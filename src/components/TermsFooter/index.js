@@ -1,16 +1,16 @@
 import React from 'react';
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import getThemeColor from "../../utils/getThemeColor"
 import * as S  from'./styled';
 
 const LinksTerms = () => (
     <S.WrapperLinksTerms>
         <S.CopyRight>@2020 desertovermelho.com</S.CopyRight> • 
-        <S.LinkTerm><AniLink to= "/terms">termos de uso</AniLink></S.LinkTerm>
-        <S.DevelopBy>
-            Desenvolvido por: <AniLink to="https://github.com/laiscavalcanti">@laiscavalcanti</AniLink>
-        </S.DevelopBy>
+        <S.LinkTerm to= "/terms" direction="right" duration={0.5} bg={getThemeColor()}> termos de uso</S.LinkTerm> • 
+        <S.DevelopBy to="https://github.com/laiscavalcanti" direction="right" duration={0.5} bg={getThemeColor()}>  
+            desenvolvido por @laiscavalcanti
+        </S.DevelopBy> • 
         <S.Contact>
-            Fale aqui: contato@desertovermelho.com.br
+            fale aqui: contato@desertovermelho.com.br
         </S.Contact>
     </S.WrapperLinksTerms>
     

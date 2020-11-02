@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 import Pagination from "../components/Pagination"
 import { GridWrapper, Line } from "../components/GridPost/styled"
 import Slideshow from "../components/Carousel"
-import Contact from "../components/Contact"
 
 const BlogList = props => {
   const postList = props.data.allMarkdownRemark.edges
@@ -62,7 +61,6 @@ const BlogList = props => {
         prevPage={prevPage}
         nextPage={nextPage}
       />
-      <Contact />
     </Layout>
   )
 }

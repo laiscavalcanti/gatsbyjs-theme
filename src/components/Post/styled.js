@@ -11,7 +11,6 @@ export const PostHeader = styled.header`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-right: 1px solid red;
   padding-right: -15rem;
   padding: 0rem 0 1rem 0rem;
   ${media.lessThan("large")`

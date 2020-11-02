@@ -12,5 +12,6 @@ export const PostImage = styled(Img)`
     display: flex;
     width: 100%;
     height: 22rem;
+    margin: 0;
 `}
 `

@@ -27,7 +27,7 @@ export const LayoutList = styled.li`
   `}
 `
 export const LayoutLink = styled(AniLink)`
-color: var(--black);
+color: var(--sameColorBlack);
   text-decoration:none;
       display:block;
       padding:5px 0;
@@ -45,7 +45,7 @@ color: var(--black);
           to right,
           #b6071d,
           #be1622 50%,
-          var(--white) 50%);
+          var(--sameColorBlack) 50%);
       background-size: 200% 100%;
       background-position: -100%;
       transition: all 0.3s ease-in-out;

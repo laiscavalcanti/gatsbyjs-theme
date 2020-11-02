@@ -34,13 +34,14 @@ body{
     --texts: #000000;
     --color: #be1622;
     --background-color: #00000;
-    --black:#222;
-    --white:#191919;
+    --black:#191919;
+    --white:#fff;
     --borderSideBar: #222;
     --colorSideBar: #222;
     --highlight: #ffd700;
     --colorSelection: #fff;
-    --backgroundSelection: #900020;
+    --backgroundSelection: #be1622;
+    --colorHover: #698eb4;
   }
 
   body.dark{
@@ -55,7 +56,7 @@ body{
     --borderSideBar: #fff;
     --colorSideBar: #222;
     --highlight: #ffd700;
-    --colorSelection: #900020;
+    --colorSelection: #be1622;
     --backgroundSelection: #fff;
     --colorHover: #698eb4;
   }

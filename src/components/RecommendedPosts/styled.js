@@ -5,7 +5,6 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 export const RecommendedWrapper = styled.section`
   display: flex;
   justify-content: flex-start;
-  border-top: 1px dashed var(--black);
   margin: 0 26.5rem 0 4rem;
   line-height: 19px;
   background-color: var(--background-color);

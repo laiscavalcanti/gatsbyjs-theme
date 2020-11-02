@@ -6,9 +6,9 @@ import LinksTerms from "../TermsFooter";
 
 const Footer = () => {
   return (
-    <S.MenuBarWrapper>
+    <S.FooterWrapper>
       <LinksTerms />
-    </S.MenuBarWrapper>
+    </S.FooterWrapper>
   )
 }
 

@@ -14,7 +14,7 @@ export const GridWrapper = styled.section`
 `
 export const Line = styled.div`
   border-top: 1px groove var(--borders);
-  margin: 01rem 2rem 0rem 2rem;
+  margin: 0rem 2rem 0rem 2rem;
   ${media.lessThan("large")`
   margin: 0rem 2rem 0rem 2rem;
 `}

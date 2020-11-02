@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import media from "styled-media-query"
-import { Moon } from "@styled-icons/entypo/Moon"
+import { Moon } from "@styled-icons/boxicons-solid/Moon"
 
 const ButtonTheme = () => {
   const [theme, setTheme] = useState(null)
@@ -28,35 +28,32 @@ const ButtonTheme = () => {
 
 export const WrapperLight = styled.p`
   height: auto;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0.7rem 0 0 0.7rem;
   color: #be1622;
   ${media.lessThan("large")`
-    height:10px;
-    width: 10px;
-    margin: 0;
+    margin: 0rem 5.8rem 3rem 0rem;
   `}
 
   &.light {
-    color: #ffd700;
+    color: #be1622;
     &:hover {
-      color: red;
+      color: var(--sameColorBlack);
     }
   }
   &:hover {
-    color: yellow
+    color: #ffd700;
   }
 `
 
 export const IconLight = styled.div`
-  width: 17px;
-  height: 17px;
+  width: 19px;
+  height: 19px;
   border: none;
   background: none;
   cursor: pointer;
   ${media.lessThan("large")`
-    height:15px;
-    width: 15px;
+    height:19px;
+    width: 19px;
     margin: 0;
   `}
 `

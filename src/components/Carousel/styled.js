@@ -8,6 +8,7 @@ export const CarouselWrapper = styled.section`
   justify-content: center;
   width: 100%;
   margin-top: 4rem;
+  margin-bottom: 2rem;
   ${media.lessThan("large")`
     display: flex;
     flex-direction: column;

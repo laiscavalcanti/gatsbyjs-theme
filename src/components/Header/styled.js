@@ -30,9 +30,8 @@ export const Nav = styled.div`
   justify-content: flex-end;
   align-items: center;
   z-index: 1;
-  
   ${media.lessThan("large")`
-  margin: 0.5rem 0;
+  margin: 0rem 0;
 `}
 ${media.lessThan("large")` {
   display: none;
@@ -113,8 +112,8 @@ export const WrapperButtonTheme = styled.section`
   margin-left: -1.5rem;
   margin-bottom: -1rem;
   ${media.lessThan("large")`
-    margin-left: -7.5rem;
-    margin-top: -2rem;
+    margin-left: 0;
+    
   `}
   `
 

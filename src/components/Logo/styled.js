@@ -1,10 +1,5 @@
-/*import styled from "styled-components"
-import media from "styled-media-query"
+import styled from "styled-components"
 
 export const LogoWrapper = styled.div`
-
- 
-  ${media.lessThan("large")`
-
-  `}
-`*/
+display: block;
+`

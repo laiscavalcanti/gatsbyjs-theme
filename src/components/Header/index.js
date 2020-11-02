@@ -49,9 +49,7 @@ const Header = ({ }) => {
       />
       <S.Nav className={`${open ? "active" : ""}`}>
        <NavBar />
-       <S.WrapperButtonTheme>
           <ButtonTheme />
-        </S.WrapperButtonTheme>
       </S.Nav>
     </S.HeaderDiv>
   )
