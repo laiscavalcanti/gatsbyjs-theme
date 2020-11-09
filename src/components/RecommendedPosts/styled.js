@@ -16,24 +16,44 @@ export const RecommendedWrapper = styled.section`
   `}
 `
 export const RecommendedLink = styled(AniLink)`
+position:relative;
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 17rem;
   height: 7rem;
-  border: solid 1px var(--sameColorWhite);
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background 0.5s;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
-  background: var(--background-color);
-  color: var(--black);
-  &:hover{
-    border: solid 1px red;
-    background-color: purple;
-    transition: 0.5s ease-in-out;
+  padding: 0 20px;
+  color: var(--color);
+  height: 60px;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: pointer;
+  border: 2px solid var(--color);
+  -webkit-transition:0.5s;
+  :before, :after {
+  width: 100%;
+  height:100%;
+  z-index: 3;
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  box-sizing: border-box;
+  transform: scale(0);
+  transition: 0.5s;
+}
+  &::before{
+    border-bottom: 3px solid var(--black);
+    border-left: 0;
+    transform-origin: 0% 100%;
   }
+  &:hover{
+    border: none;
+  transform-origin: 50% 50%;
+  }
+  :hover::after, :hover::before {
+  transform: scale(1);
+}
   &::selection {
     color: var(--colorSelection);
     background: var(--backgroundSelection);
