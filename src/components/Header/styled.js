@@ -96,7 +96,7 @@ ${breakpoints.vp7} {
 `*/
 export const LogoStyled = styled(Link)`
 box-sizing: border-box;
-margin-right: 5rem;
+margin-left: 10rem;
 transition: ease-in linear 0.2s;
 height:${props => props.shrink ? "9rem" : "13.5rem"};
 width: ${props => props.shrink ? "9rem" : "13.5rem"};

@@ -37,9 +37,7 @@ const Header = ({ }) => {
 
   return (
     <S.HeaderDiv shrink={shrink}>
-      <S.LogoStyled shrink={shrink}>
-      <Logo/>
-      </S.LogoStyled>
+     
       <S.Menu
         isOpen={open}
         menuClicked={handleClick}
@@ -51,6 +49,9 @@ const Header = ({ }) => {
        <NavBar />
           <ButtonTheme />
       </S.Nav>
+      <S.LogoStyled shrink={shrink}>
+      <Logo/>
+      </S.LogoStyled>
     </S.HeaderDiv>
   )
 }

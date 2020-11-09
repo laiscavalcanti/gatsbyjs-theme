@@ -34,7 +34,7 @@ color: var(--sameColorBlack);
       letter-spacing: 0.05rem;
   font-size: 1.5rem;
   font-weight: 500;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Share Tech Mono', monospace;
       line-height:1;
       position:relative;
       z-index:1;

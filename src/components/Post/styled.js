@@ -46,7 +46,7 @@ export const PostTitle = styled.h1`
   max-width: 40rem;
   margin: 5rem 0.5rem 0.5rem 7.5rem;
   padding: 0 1rem 0 1rem;
-  font-family: "Oswald", sans-serif;
+  font-family: "Share Tech Mono", monospace;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.15;
@@ -159,10 +159,10 @@ export const MainContent = styled.article`
   .tags,
   iframe,
   .button-post {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Lato", sans-serif;
     color: var(--texts);
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.8;
     letter-spacing: 0.005rem;
     padding: 0 1.4rem;
