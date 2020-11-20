@@ -1,21 +1,15 @@
-import React from "react"
-import Profile from "../Profile"
-import SocialLinks from "../SocialLinks"
-import * as S from "./styled"
+import React from "react";
+//import Profile from "../Profile";
+//import SocialLinks from "../SocialLinks";
+import * as S from "./styled";
+import LinksTerms from "../TermsFooter";
 
 const Footer = () => {
   return (
-    <S.MenuBarWrapper>
-      <S.MenuBarGroup>
-        <S.MenuBarItem>
-          <Profile />
-        </S.MenuBarItem>
-      </S.MenuBarGroup>
-      <S.MenuBarGroup>
-        <S.MenuBarItem></S.MenuBarItem>
-      </S.MenuBarGroup>
-    </S.MenuBarWrapper>
+    <S.FooterWrapper>
+      <LinksTerms />
+    </S.FooterWrapper>
   )
 }
 
-export default Footer
+export default Footer;

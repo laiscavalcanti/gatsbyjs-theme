@@ -12,15 +12,15 @@ export const PaginationWrapper = styled.section`
   background-color: var(--background-color);
   justify-content: space-around;
   align-content: flex-end;
+  &::selection {
+    color: var(--white);
+    background: var(--backgroundSelection);
+  }
   ${media.lessThan("large")`
       padding: 0.5rem 0 0 0.5rem;
       margin: 0 0.5rem 0 0.5rem;
       font-size: 0.8rem;
   `}
-  &::selection {
-    color: var(--colorSelection);
-    background: var(--backgroundSelection);
-  }
   a {
     color: var(--black);
     transition: color 0.5s;

@@ -2,28 +2,36 @@ import styled from "styled-components"
 import media from "styled-media-query"
 import { Link } from "gatsby"
 
+export const PostLine =  styled.div`
+  height: 100rem;;
+  border-top: 1px solid red;
+  margin-left: -5rem;
+`
+export const PostWrapper =  styled.section`
+  display: flex;
+  margin: 4rem 2rem 3rem 0rem;`
+
 export const PostHeader = styled.header`
   display: flex;
+  max-width: 40rem;
   flex-direction: column;
-  padding: 1rem 0 1rem 0rem;
-  margin-left: 16rem;
-  max-width: 48.4rem;
-  ${media.lessThan("large")`
-  margin: 0.5rem 1rem 1rem 1rem;
+  height: 20rem;
+  margin: 3rem 0 1rem 0;
+    ${media.lessThan("large")`
+    margin: 0.5rem 1rem 1rem 1rem;
     padding: 1rem 0 0;
     max-width: 100%;
   `}
 `
 export const PostTag = styled(Link)`
   display: flex;
-  align-items: flex-end;
   margin-top: 0.2rem;
   color: var(--black);
   text-decoration: none;
   font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
-  opacity: 0.8;
+  opacity: 0.9;
   &:hover {
     color: var(--black);
   }
@@ -37,10 +45,11 @@ export const PostTag = styled(Link)`
   `}
 `
 export const PostTitle = styled.h1`
-  text-align: end;
-  margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+  text-align: start;
+  max-width: 37rem;
+  margin: 1rem 0.5rem 0.5rem 3.5rem;
   padding: 0 1rem 0 1rem;
-  font-family: "Merriweather", sans-serif;
+  font-family: "Share Tech Mono", monospace;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.15;
@@ -57,18 +66,18 @@ export const PostTitle = styled.h1`
     font-size: 1.7rem;
     margin: 1rem 0 1rem  0;  `}
 `
-export const PostDescription = styled.h2`
-  margin: 1.2rem 0.5rem 0 0.5rem;
-  padding: 0 1rem 0 1rem;
+export const PostDescription = styled.h2` 
+  max-width: 35rem;
+  padding: 1rem 0.5rem 0 4.5rem; 
   letter-spacing: 0rem;
   font-weight: 100;
   line-height: 1.5;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
   font-style: italic;
-  text-align: end;
+  text-align: start;
   color: var(--black);
-  opacity: 0.8;
+  opacity: 1;
   &::selection {
     color: var(--colorSelection);
     background: var(--backgroundSelection);
@@ -84,14 +93,11 @@ export const PostDescription = styled.h2`
   `}
 `
 export const PostDate = styled.p`
-  margin: 0.4rem 0.5rem 0 0.5rem;
-  padding: 0 1rem 0 0rem;
   color: var(--black);
   font-size: 0.9rem;
   font-weight: 100;
-  font-family: "Montserrat", sans-serif;
-  margin: 1rem 1rem 0 1rem;
-  text-align: end;
+  font-family: "Lato", sans-serif;
+  margin: 1rem 0rem 0 5rem;
   opacity: 0.7;
   &::selection {
     color: var(--colorSelection);
@@ -108,8 +114,7 @@ export const PostDate = styled.p`
 `
 export const IconWrapper = styled.div`
   display: flex;
-  margin: 2rem 3rem 0 1rem;
-  padding-left: 2rem;
+  margin: 2rem 2rem 2.5rem 4rem;
   color: var(--white);
   opacity: 0.6;
   ${media.lessThan("large")`
@@ -122,7 +127,7 @@ export const Icon = styled.div`
   width: 25px;
   height: 25px;
   color: var(--black);
-  opacity: 0.7;
+  opacity: 0.9;
   cursor: pointer;
   ${media.lessThan("large")`
   width: 25px;
@@ -136,8 +141,8 @@ export const IconArrowWrapper = styled.div`
   padding: 1rem 0.5rem 2rem 18rem;
 `
 export const MainContent = styled.article`
-  max-width: 64.5rem;
-  padding: 1rem 0rem 2rem 18rem;
+  max-width: 47.5rem;
+  padding: 1rem 0rem 2rem 7rem;
   text-align: justify;
   ${media.lessThan("large")`
     padding: 0;
@@ -155,10 +160,10 @@ export const MainContent = styled.article`
   .tags,
   iframe,
   .button-post {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Lato", sans-serif;
     color: var(--texts);
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.8;
     letter-spacing: 0.005rem;
     padding: 0 1.4rem;

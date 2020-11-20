@@ -8,7 +8,7 @@ import RecommendedPosts from "../components/RecommendedPosts"
 import PostImage from "../components/PostImage"
 import scrollToTop from "../utils/scrollToTop"
 import { ArrowUpward as ArrowUp } from "@styled-icons/material-rounded/ArrowUpward"
-import { Tag } from "@styled-icons/boxicons-regular/Tag"
+import { Tag } from "@styled-icons/entypo/Tag"
 
 import * as S from "../components/Post/styled"
 
@@ -24,6 +24,7 @@ const BlogPost = ({ data, pageContext }) => {
         description={post.frontmatter.description}
         imagePost={post.frontmatter.imagePost}
       />
+      <S.PostWrapper>
       <PostImage imagePost={post.frontmatter.imagePost} />
       <S.PostHeader>
         <S.PostDate>
@@ -44,6 +45,7 @@ const BlogPost = ({ data, pageContext }) => {
           })}
         </S.IconWrapper>
       </S.PostHeader>
+      </S.PostWrapper>
       <S.MainContent>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </S.MainContent>

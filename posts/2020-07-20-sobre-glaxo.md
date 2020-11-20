@@ -5,7 +5,7 @@ description: O elemento natural mais presente em Glaxo é a terra.
 tags: ["literatura"]
 author: Deserto Vermelho
 image: ../src/static/assets/img/hernan.jpg
-imagePost: ../src/static/assets/img/herman.jpg
+imagePost: ../src/static/assets/img/hernan.jpg
 templateKey: slideshow
 ---
 

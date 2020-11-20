@@ -1,3 +1,6 @@
+require("dotenv").config()
+const queries = require("./src/utils/algolia_queries.js")
+
 module.exports = {
   siteMetadata: {
     title: `Deserto Vermelho`,
@@ -33,7 +36,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Oswald", "Montserrat"],
+          families: ["Oswald", "Montserrat", "Major Mono Display", "Share Tech Mono", "Lato"],
         },
       },
     },
@@ -54,6 +57,17 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-algolia-search`,
+      options: {
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
+        queries,
+        chunkSize: 10000,
+        enablePartialUpdates: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

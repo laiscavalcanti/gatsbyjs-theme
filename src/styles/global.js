@@ -32,15 +32,17 @@ body{
     --sameColorWhite: #fff;
     --borders: #222;
     --texts: #000000;
-    --color: #900020;
+    --color: #be1622;
     --background-color: #00000;
-    --black:#222;
-    --white:#191919;
+    --black:#191919;
+    --white:#fff;
     --borderSideBar: #222;
     --colorSideBar: #222;
     --highlight: #ffd700;
     --colorSelection: #fff;
-    --backgroundSelection: #900020;
+    --backgroundSelection: #be1622;
+    --colorHover: #698eb4;
+    --colorHoverDescription: #222;
   }
 
   body.dark{
@@ -48,15 +50,17 @@ body{
     --sameColorWhite: #fff;
     --borders: #fff;
     --texts: #fff;
-    --color: #900020;
+    --color: #be1622;
     --background-color: #191919;
     --black: #fff;
     --white:#191919;
     --borderSideBar: #fff;
     --colorSideBar: #222;
     --highlight: #ffd700;
-    --colorSelection: #900020;
+    --colorSelection: #be1622;
     --backgroundSelection: #fff;
+    --colorHover: #698eb4;
+    --colorHoverDescription: transparent;
   }
 `
 export default GlobalStyles

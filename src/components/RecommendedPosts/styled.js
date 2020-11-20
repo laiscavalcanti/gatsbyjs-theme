@@ -4,9 +4,12 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const RecommendedWrapper = styled.section`
   display: flex;
-  border-top: 1px dashed var(--black);
-  margin: 0 8rem 0 8rem;
+  justify-content: center;
+  max-width: 50rem;
+  line-height: 19px;
+  margin-left: 3rem;
   background-color: var(--background-color);
+  font-family: 'Share Tech Mono';
   ${media.lessThan("large")`
     line-height: 1;
     font-size: 0.8rem;
@@ -14,15 +17,51 @@ export const RecommendedWrapper = styled.section`
     margin: 0 0.5rem 0 0.5rem;
   `}
 `
-export const RecommendedLink = styled(AniLink)`
-  align-items: center;
-  background: var(--background-color);
-  color: var(--black);
+export const RecommendedPrevious= styled.div`
   display: flex;
-  padding: 1rem;
-  text-decoration: none;
-  transition: background 0.5s;
-  width: 50%;
+  flex-direction: column;
+  
+`
+export const RecommendedLink = styled(AniLink)`
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 15rem;
+  height: 7rem;
+  margin: 0 auto;
+  color: var(--color);
+  height: 60px;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: pointer;
+  border: 2px solid var(--color);
+  -webkit-transition:0.5s;
+  :before, :after {
+    width: 100%;
+    height:100%;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    transform: scale(0);
+    transition: 0.5s;
+  }
+  &::before{
+    border-bottom: 3px solid var(--black);
+    border-left: 0;
+    transform-origin: 0% 100%;
+  }
+  &:hover{
+    border: none;
+    transform-origin: 50% 50%;
+    color: var(--black);
+  }
+  :hover::after, :hover::before {
+    transform: scale(1);
+}
   &::selection {
     color: var(--colorSelection);
     background: var(--backgroundSelection);
@@ -37,15 +76,15 @@ export const RecommendedLink = styled(AniLink)`
   `}
 
   &.previous {
-    margin-left: 3rem;
+    
     ${media.lessThan("large")`
       margin-left: 0rem;
   `}
   }
   &.next {
+    display: flex;
     justify-content: flex-end;
-    margin-right: 3rem;
-
+    
     ${media.lessThan("large")`
       margin-right: 0rem;
   `}

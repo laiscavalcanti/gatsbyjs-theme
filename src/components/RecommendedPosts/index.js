@@ -5,6 +5,7 @@ import getThemeColor from "../../utils/getThemeColor"
 
 const RecommendedPosts = ({ next, previous }) => (
   <S.RecommendedWrapper>
+    
     {previous && (
       <S.RecommendedLink
         to={previous.fields.slug}
@@ -17,6 +18,7 @@ const RecommendedPosts = ({ next, previous }) => (
         {previous.frontmatter.title}
       </S.RecommendedLink>
     )}
+
     {next && (
       <S.RecommendedLink
         to={next.fields.slug}
@@ -26,7 +28,7 @@ const RecommendedPosts = ({ next, previous }) => (
         duration={0.5}
         bg={getThemeColor}
       >
-        {next.frontmatter.title}
+         {next.frontmatter.title}
       </S.RecommendedLink>
     )}
   </S.RecommendedWrapper>

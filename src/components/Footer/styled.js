@@ -2,21 +2,22 @@ import styled from "styled-components"
 import media from "styled-media-query"
 import { Link } from "gatsby"
 
-export const MenuBarWrapper = styled.aside`
+export const FooterWrapper = styled.footer`
   display: flex;
-  align-items: flex-end;
   justify-content: center;
-  margin-top: 5rem;
-  height: 6.5rem;
+  font-family: "Share Tech Mono", monospace;
+  height: 3.5rem;
   width: 100%;
-  background-color: var(--sameColorBlack);
+  background-color: var(--background-color);
   ${media.lessThan("large")`
   display: flex;
-  justify-content: flex-start;
-  height: 5.5rem;
+  flex-direction: column;
+  height: 6.5rem;
+
   `}
 `
-export const MenuBarGroup = styled.div`
+
+/*export const MenuBarGroup = styled.div`
   display: flex;
   margin: 0 1.5rem 0 1.5rem;
   background-color: lightblue;
@@ -39,4 +40,4 @@ export const MenuBarItem = styled.span`
   ${media.lessThan("large")`
     padding: 0.5rem;
   `}
-`
+`*/
