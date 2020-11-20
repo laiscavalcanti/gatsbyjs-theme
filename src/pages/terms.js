@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 
-const NotFoundPage = () => (
+const TermsUse = () => (
   <Layout>
     <SEO title="Termos de Uso" />
     <h1>Termos de Uso</h1>
@@ -11,4 +11,4 @@ const NotFoundPage = () => (
   </Layout>
 )
 
-export default NotFoundPage
+export default TermsUse

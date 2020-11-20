@@ -7,13 +7,17 @@ export const PostLine =  styled.div`
   border-top: 1px solid red;
   margin-left: -5rem;
 `
+export const PostWrapper =  styled.section`
+  display: flex;
+  margin: 4rem 2rem 3rem 0rem;`
+
 export const PostHeader = styled.header`
   display: flex;
+  max-width: 40rem;
   flex-direction: column;
-  align-items: flex-start;
-  padding-right: -15rem;
-  padding: 0rem 0 1rem 0rem;
-  ${media.lessThan("large")`
+  height: 20rem;
+  margin: 3rem 0 1rem 0;
+    ${media.lessThan("large")`
     margin: 0.5rem 1rem 1rem 1rem;
     padding: 1rem 0 0;
     max-width: 100%;
@@ -21,12 +25,11 @@ export const PostHeader = styled.header`
 `
 export const PostTag = styled(Link)`
   display: flex;
-  align-items: flex-end;
   margin-top: 0.2rem;
   color: var(--black);
   text-decoration: none;
   font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   opacity: 0.9;
   &:hover {
@@ -43,8 +46,8 @@ export const PostTag = styled(Link)`
 `
 export const PostTitle = styled.h1`
   text-align: start;
-  max-width: 40rem;
-  margin: 5rem 0.5rem 0.5rem 7.5rem;
+  max-width: 37rem;
+  margin: 1rem 0.5rem 0.5rem 3.5rem;
   padding: 0 1rem 0 1rem;
   font-family: "Share Tech Mono", monospace;
   font-size: 3rem;
@@ -64,14 +67,15 @@ export const PostTitle = styled.h1`
     margin: 1rem 0 1rem  0;  `}
 `
 export const PostDescription = styled.h2` 
-  padding: 1rem 1rem 0 8.5rem;
+  max-width: 35rem;
+  padding: 1rem 0.5rem 0 4.5rem; 
   letter-spacing: 0rem;
   font-weight: 100;
   line-height: 1.5;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.3rem;
   font-style: italic;
-  text-align: end;
+  text-align: start;
   color: var(--black);
   opacity: 1;
   &::selection {
@@ -89,13 +93,11 @@ export const PostDescription = styled.h2`
   `}
 `
 export const PostDate = styled.p`
-  padding: 1rem 1rem 0 7.5rem;
   color: var(--black);
   font-size: 0.9rem;
   font-weight: 100;
-  font-family: "Montserrat", sans-serif;
-  margin: 1rem 1rem 0 1rem;
-  text-align: end;
+  font-family: "Lato", sans-serif;
+  margin: 1rem 0rem 0 5rem;
   opacity: 0.7;
   &::selection {
     color: var(--colorSelection);
@@ -112,8 +114,7 @@ export const PostDate = styled.p`
 `
 export const IconWrapper = styled.div`
   display: flex;
-  margin: 2rem 3rem 0 6rem;
-  padding-left: 2rem;
+  margin: 2rem 2rem 2.5rem 4rem;
   color: var(--white);
   opacity: 0.6;
   ${media.lessThan("large")`
@@ -140,7 +141,7 @@ export const IconArrowWrapper = styled.div`
   padding: 1rem 0.5rem 2rem 18rem;
 `
 export const MainContent = styled.article`
-  max-width: 50.5rem;
+  max-width: 47.5rem;
   padding: 1rem 0rem 2rem 7rem;
   text-align: justify;
   ${media.lessThan("large")`

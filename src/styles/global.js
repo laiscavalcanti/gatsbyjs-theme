@@ -42,6 +42,7 @@ body{
     --colorSelection: #fff;
     --backgroundSelection: #be1622;
     --colorHover: #698eb4;
+    --colorHoverDescription: #222;
   }
 
   body.dark{
@@ -59,6 +60,7 @@ body{
     --colorSelection: #be1622;
     --backgroundSelection: #fff;
     --colorHover: #698eb4;
+    --colorHoverDescription: transparent;
   }
 `
 export default GlobalStyles

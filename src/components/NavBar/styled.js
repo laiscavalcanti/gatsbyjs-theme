@@ -4,7 +4,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const LayoutNav = styled.nav`
   display: flex;
-  align-items: flex-start;
+  align-items: start;
   height: auto;
   color: var(--sameColorBlack);
   ${media.lessThan("large")`

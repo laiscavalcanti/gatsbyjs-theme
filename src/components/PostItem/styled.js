@@ -90,7 +90,7 @@ export const PostItemTitle = styled.h1`
   height: 60px;
   max-width: 19rem;
   &:hover {
-    background-color: transparent;
+    background-color: var(--colorHoverDescription);
     transition: opacity 0.6s, transform 0.3s;
   }
   ${media.lessThan("large")`
@@ -114,7 +114,7 @@ export const PostItemAuthor = styled.p`
 export const PostItemDate = styled.section`
   display: flex;
   justify-content: flex-end;
-  margin: 0.5rem 1.1rem 0rem 0rem;
+  margin: 0.5rem 1.1rem 0rem 0.5rem;
   font-size: 0.7rem;
   ${media.lessThan("large")`
     font-size: 0.6rem;

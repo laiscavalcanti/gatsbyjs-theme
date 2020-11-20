@@ -214,8 +214,8 @@ export const CarouselDescription = styled.span`
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
   line-height: 1.3;
-  background-color: lightgray;
-  color: var(--white);
+  background-color: var(--sameColorBlack);
+  color: var(--sameColorWhite);
   ${media.lessThan("large")`
     margin: 1rem 1rem 0 1rem;
     font-size: 1rem;

@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 export const FooterWrapper = styled.footer`
   display: flex;
   justify-content: center;
+  font-family: "Share Tech Mono", monospace;
   height: 3.5rem;
   width: 100%;
   background-color: var(--background-color);

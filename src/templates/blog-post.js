@@ -24,8 +24,9 @@ const BlogPost = ({ data, pageContext }) => {
         description={post.frontmatter.description}
         imagePost={post.frontmatter.imagePost}
       />
-      <S.PostHeader>
+      <S.PostWrapper>
       <PostImage imagePost={post.frontmatter.imagePost} />
+      <S.PostHeader>
         <S.PostDate>
           {post.frontmatter.date} • {post.timeToRead} min de leitura
         </S.PostDate>
@@ -44,6 +45,7 @@ const BlogPost = ({ data, pageContext }) => {
           })}
         </S.IconWrapper>
       </S.PostHeader>
+      </S.PostWrapper>
       <S.MainContent>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </S.MainContent>
