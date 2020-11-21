@@ -141,7 +141,7 @@ export const CarouselInfo = styled.section`
   width: 40%;
   left: 20px;
   bottom: 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Lato", sans-serif;
 
   ${media.lessThan("large")`
   position: absolute;
@@ -161,7 +161,7 @@ export const CarouselDate = styled.div`
   justify-content: center;
   width: 100%;
   margin: 1rem 0 0 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1rem;
   opacity: 0.7;
   ${media.lessThan("large")`
@@ -175,7 +175,7 @@ export const CarouselTitle = styled.h1`
   justify-content: center;
   margin: 2.5rem 1rem 0rem 1rem;
   text-align: center;
-  font-family: "Oswald", serif;
+  font-family: "Share Tech Mono", monospace;
   line-height: 1.3;
   font-size: 2.7rem;
   font-weight: 700;
@@ -195,7 +195,7 @@ export const CarouselAuthor = styled.span`
   justify-content: center;
   width: 100%;
   margin: 2rem 0 0 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-size: 0.8rem;
   opacity: 0.7;
@@ -212,7 +212,7 @@ export const CarouselDescription = styled.span`
   text-align: center;
   font-size: 1.4rem;
   font-weight: 300;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 1.3;
   background-color: var(--sameColorBlack);
   color: var(--sameColorWhite);

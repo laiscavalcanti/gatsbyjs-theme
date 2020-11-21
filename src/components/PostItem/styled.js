@@ -38,7 +38,7 @@ export const PostItemInfo = styled.div`
   flex-direction: column;
   justify-content: center;
   max-width: 20.5rem;
-  margin: 0 0 0 1rem;
+  margin: 0 0 0 1.5rem;
   font-family: "Montserrat", sans-serif;
   ${media.lessThan("large")`
   display: flex;
@@ -54,7 +54,7 @@ export const PostItemInfo = styled.div`
 export const PostItemImg = styled(Img)`
   display: flex;
   height: 11rem;
-  width: 19rem;
+  width: 19.5rem;
   -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
   -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
   -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
@@ -79,16 +79,16 @@ export const PostItemTitle = styled.h1`
   justify-content: center;
   align-items: center;
   text-align: left;
-  flex-wrap: wrap;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.5rem;
+  height: auto;
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.2;
   margin: 0.7rem 1rem 0.9rem 0rem;
   background-color: var(--color);
   color:var(--sameColorWhite);
-  height: 60px;
-  max-width: 19rem;
+  height: 5rem;
+  max-width: 20rem;
   &:hover {
     background-color: var(--colorHoverDescription);
     transition: opacity 0.6s, transform 0.3s;
@@ -103,7 +103,7 @@ export const PostItemAuthor = styled.p`
   display: flex;
   align-content: center;
   justify-content: flex-start;
-  font-family: "Oswald", sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-size: 0.7rem;
   opacity: 0.8;
@@ -124,10 +124,11 @@ export const PostItemDescription = styled.p`
   display: flex;
   justify-content: flex-start;
   text-align: left;
-  margin: 0.8rem 0 0 0;
+  margin: 0.8rem 1rem 0 0;
+  max-width: 20rem;
   font-size: 1.1rem;
   font-weight: 300;
-  font-family: "Oswald", sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 1.3;
   ${media.lessThan("large")`
     font-size: 0.8rem;

@@ -8,11 +8,12 @@ export const WrapperLinksTerms = styled.section`
     justify-content: space-around;
     margin: 1rem;
     font-size: 0.9rem;
-
+    font-family: "Share Tech Mono", monospace;
+    opacity: 0.7;
     ${media.lessThan("large")`
       display: flex;
       flex-direction: column;
-      margin-left: 2rem;
+      margin-left: 2rem; 
       font-size: 0.8rem;
   `}
 `
@@ -21,6 +22,7 @@ export const CopyRight = styled.p `
     color: var(--black);
     letter-spacing: 1px;
     cursor: pointer;
+
     &:hover{
         opacity: 0.8;
     }
@@ -37,9 +39,10 @@ export const LinkTerm = styled(AniLink)`
     &::selection {
     color: var(--white);
     background: var(--backgroundSelection);
+    opacity: 0.7;
   }
   &:hover{
-        opacity: 0.8;
+    opacity: 0.8;
     }
 ` 
 export const DevelopBy = styled(AniLink)`
@@ -51,9 +54,10 @@ export const DevelopBy = styled(AniLink)`
     &::selection {
     color: var(--white);
     background: var(--backgroundSelection);
+    opacity: 0.7;
   }
   &:hover{
-        opacity: 0.8;
+    opacity: 0.8;
     }
 `
 export const Contact = styled.p`
@@ -64,8 +68,9 @@ export const Contact = styled.p`
     &::selection {
     color: var(--white);
     background: var(--backgroundSelection);
+    opacity: 0.7;
   }
     &:hover{
-        opacity: 0.8;
+      opacity: 0.8;
     }
 `
