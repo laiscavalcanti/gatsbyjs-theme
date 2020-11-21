@@ -10,7 +10,7 @@ export const PostLine = styled.div`
 export const PostWrapper = styled.section`
   display: flex;
   align-items: center;
-  margin: 4rem 2rem 3rem 0rem;
+  margin: 4rem 0rem 3rem 0rem;
   width: 100%;
   height: auto;
   ${media.lessThan("large")`
@@ -51,7 +51,6 @@ export const PostTag = styled(Link)`
   `}
 `
 export const PostTitle = styled.h1`
-  text-align: start;
   max-width: 35rem;
   margin: 0rem 0.5rem 0.5rem 3.5rem;
   padding: 0 1rem 0 1rem;
@@ -74,7 +73,7 @@ export const PostTitle = styled.h1`
 `
 export const PostDescription = styled.h2`
   max-width: 35rem;
-  margin: 0rem 0.5rem 0.5rem 3.5rem;
+  margin: 0rem 1.5rem 0.5rem 3.5rem;
   padding: 0 1rem 0 1rem;
   letter-spacing: 0rem;
   font-weight: 100;
@@ -100,12 +99,14 @@ export const PostDescription = styled.h2`
   `}
 `
 export const PostDate = styled.p`
+  max-width: 35rem;
   height: auto;
   color: var(--colorHover);
   font-size: 0.9rem;
   font-weight: 100;
   font-family: "Lato", sans-serif;
-  margin: 1rem 12rem 0 0rem;
+  margin: 1.5rem 1.5rem 0.5rem 10rem;
+  padding: 0 1rem 0 1rem;
   opacity: 0.7;
   &::selection {
     color: var(--colorSelection);
