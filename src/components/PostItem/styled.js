@@ -80,11 +80,11 @@ export const PostItemTitle = styled.h1`
   align-items: center;
   text-align: left;
   height: auto;
-  font-family: "Lato", sans-serif;
-  font-size: 1.4rem;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 1.3rem;
   font-weight: 700;
   line-height: 1.2;
-  margin: 0.7rem 1rem 0.9rem 0rem;
+  margin: 0.7rem 1.1rem 0.9rem 0rem;
   background-color: var(--color);
   color:var(--sameColorWhite);
   height: 5rem;

@@ -27,12 +27,7 @@ const BlogPost = ({ data, pageContext }) => {
       <S.PostWrapper>
       <PostImage imagePost={post.frontmatter.imagePost} />
       <S.PostHeader>
-        <S.PostDate>
-          {post.frontmatter.date} • {post.timeToRead} min de leitura
-        </S.PostDate>
-        <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
-        <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
-        <S.IconWrapper>
+      <S.IconWrapper>
           <S.Icon>
             <Tag />
           </S.Icon>
@@ -44,6 +39,12 @@ const BlogPost = ({ data, pageContext }) => {
             )
           })}
         </S.IconWrapper>
+      
+        <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
+        <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
+        <S.PostDate>
+          {post.frontmatter.date}  •  {post.timeToRead} min de leitura
+        </S.PostDate>
       </S.PostHeader>
       </S.PostWrapper>
       <S.MainContent>

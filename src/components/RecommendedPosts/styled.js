@@ -11,10 +11,11 @@ export const RecommendedWrapper = styled.section`
   background-color: var(--background-color);
   font-family: 'Share Tech Mono';
   ${media.lessThan("large")`
+    max-width: 20rem;
     line-height: 1;
     font-size: 0.8rem;
-    padding: 0.5rem 0.5rem 0rem 0.5rem;
-    margin: 0 0.5rem 0 0.5rem;
+    padding: .5rem .5rem 2rem .5rem;
+    margin: 0 1rem 0 1.5rem;
   `}
 `
 export const RecommendedPrevious= styled.div`
@@ -68,11 +69,13 @@ export const RecommendedLink = styled(AniLink)`
   }
 
   ${media.lessThan("large")`
-  widht: 100%;
+    max-width: 8rem;
     line-height: 1.3;
-    font-size: 0.8rem;
+    font-size: .8rem;
     padding: 0;
-    margin-left: 1rem;
+    margin: .5rem 2rem .5rem .5rem;
+    padding: .2rem;
+    height: 5rem;
   `}
 
   &.previous {

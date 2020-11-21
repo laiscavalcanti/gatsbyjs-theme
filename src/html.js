@@ -10,7 +10,7 @@ export default function HTML(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes} className="light">
+      <body {...props.bodyAttributes} className="dark">
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -32,7 +32,7 @@ export default function HTML(props) {
                   localStorage.setItem('theme', newTheme);
                 } catch (err) {}
               }
-              setTheme(preferredTheme || 'black');
+              setTheme(preferredTheme || 'dark');
             })();
           `,
           }}

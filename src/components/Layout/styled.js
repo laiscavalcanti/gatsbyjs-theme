@@ -15,7 +15,7 @@ export const LayoutMain = styled.main`
   transition: 0.5s;
   width: 100%;
   ${media.lessThan("large")`
-    padding: 3rem 0 2rem 0;
+    padding: 0;
     min-height: 70vh;
   `}
 `

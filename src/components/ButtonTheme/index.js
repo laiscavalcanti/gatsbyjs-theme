@@ -31,7 +31,7 @@ export const WrapperLight = styled.p`
   margin: 0.7rem 0 0 0.7rem;
   color: #be1622;
   ${media.lessThan("large")`
-    margin: 0rem 5.8rem 3rem 0rem;
+    margin: 0rem 8.3rem 3rem 0rem;
   `}
 
   &.light {

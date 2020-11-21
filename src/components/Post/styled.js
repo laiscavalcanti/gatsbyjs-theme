@@ -2,22 +2,31 @@ import styled from "styled-components"
 import media from "styled-media-query"
 import { Link } from "gatsby"
 
-export const PostLine =  styled.div`
-  height: 100rem;;
+export const PostLine = styled.div`
+  height: 100rem;
   border-top: 1px solid red;
   margin-left: -5rem;
 `
-export const PostWrapper =  styled.section`
+export const PostWrapper = styled.section`
   display: flex;
-  margin: 4rem 2rem 3rem 0rem;`
+  align-items: center;
+  margin: 4rem 2rem 3rem 0rem;
+  width: 100%;
+  height: auto;
+  ${media.lessThan("large")`
+    flex-direction: column;
+    margin: 4rem 2rem 0rem 0rem;
+  `}
+`
 
 export const PostHeader = styled.header`
   display: flex;
   max-width: 40rem;
   flex-direction: column;
-  height: 20rem;
+  align-items: center;
+  height: auto;
   margin: 3rem 0 1rem 0;
-    ${media.lessThan("large")`
+  ${media.lessThan("large")`
     margin: 0.5rem 1rem 1rem 1rem;
     padding: 1rem 0 0;
     max-width: 100%;
@@ -25,16 +34,13 @@ export const PostHeader = styled.header`
 `
 export const PostTag = styled(Link)`
   display: flex;
-  margin-top: 0.2rem;
+  margin-top: .1rem;
   color: var(--black);
   text-decoration: none;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   opacity: 0.9;
-  &:hover {
-    color: var(--black);
-  }
   &::selection {
     color: var(--white);
     background: var(--backgroundHoverPostItem);
@@ -46,11 +52,11 @@ export const PostTag = styled(Link)`
 `
 export const PostTitle = styled.h1`
   text-align: start;
-  max-width: 37rem;
-  margin: 1rem 0.5rem 0.5rem 3.5rem;
+  max-width: 35rem;
+  margin: 0rem 0.5rem 0.5rem 3.5rem;
   padding: 0 1rem 0 1rem;
   font-family: "Share Tech Mono", monospace;
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-weight: 700;
   line-height: 1.15;
   color: var(--black);
@@ -66,9 +72,10 @@ export const PostTitle = styled.h1`
     font-size: 1.7rem;
     margin: 1rem 0 1rem  0;  `}
 `
-export const PostDescription = styled.h2` 
+export const PostDescription = styled.h2`
   max-width: 35rem;
-  padding: 1rem 0.5rem 0 4.5rem; 
+  margin: 0rem 0.5rem 0.5rem 3.5rem;
+  padding: 0 1rem 0 1rem;
   letter-spacing: 0rem;
   font-weight: 100;
   line-height: 1.5;
@@ -93,32 +100,35 @@ export const PostDescription = styled.h2`
   `}
 `
 export const PostDate = styled.p`
-  color: var(--black);
+  height: auto;
+  color: var(--colorHover);
   font-size: 0.9rem;
   font-weight: 100;
   font-family: "Lato", sans-serif;
-  margin: 1rem 0rem 0 5rem;
+  margin: 1rem 12rem 0 0rem;
   opacity: 0.7;
   &::selection {
     color: var(--colorSelection);
     background: var(--backgroundSelection);
   }
   ${media.lessThan("large")`
-    opacity: 1;
-    text-align: start;
-    margin: 0;
+    opacity: 0.7;
+    color: var(--colorHover);
+    margin: 1rem 0rem 0 6rem;
     padding: 0.5rem;
     font-size: 0.7rem;
-    margin-left: 1rem;
   `}
 `
 export const IconWrapper = styled.div`
   display: flex;
-  margin: 2rem 2rem 2.5rem 4rem;
+  justify-content: start;
+  margin-left: 20rem;
+  margin-bottom: 1.5rem;
   color: var(--white);
   opacity: 0.6;
   ${media.lessThan("large")`
-   margin: 1rem 1rem 0 0;
+    margin-left: 0;
+    margin-right: 15rem;
    padding: 1rem 0 0 1rem;
   `};
 `
@@ -137,8 +147,7 @@ export const Icon = styled.div`
 export const IconArrowWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
-  max-width: 65rem;
-  padding: 1rem 0.5rem 2rem 18rem;
+  padding: 1rem 0.5rem 2rem 0rem;
 `
 export const MainContent = styled.article`
   max-width: 47.5rem;

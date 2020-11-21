@@ -4,7 +4,7 @@ import HamburgerMenu from 'react-hamburger-menu';
 import { Link } from "gatsby"
 
 export const HeaderDiv = styled.nav`
-padding: ${props => props.shrink ? "0.5rem" : "0.7rem 0"};
+padding: ${props => props.shrink ? ".5rem" : ".7rem 0"};
 transition: padding 0.5s ease-in-out;
 display: flex;
 position: fixed;
@@ -14,13 +14,9 @@ justify-content: flex-start;
 z-index: 1;
 background-color: var(--sameColorWhite);
 ${media.lessThan("large")`
-   height: 5rem;
+    height: 4.5rem;
+    padding: 0;
    justify-content: space-around;
-   margin: 0;
-   padding: 0;
-   top: 0;
-   right: 0;
-   left: 0;
   `}
 `
 export const Nav = styled.div`
@@ -29,9 +25,9 @@ export const Nav = styled.div`
   justify-content: flex-start;
   align-items: center;
   z-index: 1;
-  margin-left: 7rem;
+  margin-left: 5rem;
   ${media.lessThan("large")`
-  margin: 0rem 0;
+  margin-left: 0;
 `}
 ${media.lessThan("large")` {
   display: none;
@@ -45,10 +41,11 @@ ${media.lessThan("large")` {
   left: 0;
   width: 100%;
   height: 100vh;
-  padding-top: 30%;
-  background-color: black;
+  padding-top: 17%;
+  padding-left: 25%;
+  background-color: var(--colorHover);
   a {
-    margin: -1rem 2rem 5rem 2rem;
+    margin: -1rem 2rem 3rem 2rem;
     ${media.lessThan("large")`
     margin-left: 0.5rem;
     margin-top: 0rem;
@@ -71,7 +68,7 @@ height: 8.5rem;
   ${media.lessThan("large")`
   display: inline-block;
   visibility: visible;
-  color: var(--color);
+  color: blue;
   margin-left: 2rem;
 `}
 `
@@ -91,7 +88,7 @@ ${media.lessThan("large")`
 `
 export const WrapperButtonTheme = styled.section`
   display: flex;
-  margin-left: -1.5rem;
+  margin-left: -1rem;
   margin-bottom: -1rem;
   ${media.lessThan("large")`
     margin-left: 0;

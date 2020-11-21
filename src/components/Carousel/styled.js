@@ -142,13 +142,12 @@ export const CarouselInfo = styled.section`
   left: 20px;
   bottom: 20px;
   font-family: "Lato", sans-serif;
-
   ${media.lessThan("large")`
   position: absolute;
     display: flex;
     width: 100%;
-    margin: 1.5rem 0.5rem 0 0.5rem;
-    padding: 0 3rem 0 1.5rem;
+    margin: 1.5rem 0rem 0 0rem;
+    padding: 0 3rem 0 .5rem;
 `}
   &:hover {
     color: var(--backgroundSelection);
