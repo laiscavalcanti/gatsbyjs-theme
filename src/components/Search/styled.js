@@ -32,9 +32,9 @@ export const SearchWrapper = styled.section`
     display: flex;
     font-size: 1.6rem;
     padding: 0.6rem;
-    width: 35rem;
+    width: 37rem;
     margin: 0 auto;
-    font-family: "Roboto Slab", sans-serif;
+    font-family: "Lato", sans-serif;
     &::placeholder {
       color: var(--backgroundSelection);
     }

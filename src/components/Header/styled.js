@@ -15,6 +15,7 @@ z-index: 1;
 background-color: var(--sameColorWhite);
 ${media.lessThan("large")`
    height: 5rem;
+   justify-content: space-around;
    margin: 0;
    padding: 0;
    top: 0;
@@ -70,7 +71,7 @@ height: 8.5rem;
   ${media.lessThan("large")`
   display: inline-block;
   visibility: visible;
-  color: red;
+  color: var(--color);
   margin-left: 2rem;
 `}
 `
@@ -83,8 +84,8 @@ height:${props => props.shrink ? "9rem" : "13.5rem"};
 width: ${props => props.shrink ? "9rem" : "13.5rem"};
 margin-top: ${props => props.shrink ? "0.5rem" : "0rem"};
 ${media.lessThan("large")`
-  width: ${props => props.shrink ? "5rem" : "6rem"};
-  margin: 1rem 5rem 0 2rem;
+  width: ${props => props.shrink ? "6rem" : "6rem"};
+  margin: 1rem 0rem 0 2rem;
 `}
 
 `
