@@ -4,7 +4,7 @@ const queries = require("./src/utils/algolia_queries.js")
 module.exports = {
   siteMetadata: {
     title: `Deserto Vermelho`,
-    description: `Um blog sobre literatura, política e teoria`,
+    description: `Um blog sobre literatura, política e teoria.`,
     author: `Deserto Vermelho`,
   },
   plugins: [
