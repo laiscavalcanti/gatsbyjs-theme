@@ -4,7 +4,7 @@ const queries = require("./src/utils/algolia_queries.js")
 module.exports = {
   siteMetadata: {
     title: `Deserto Vermelho`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Um blog sobre literatura, política e teoria`,
     author: `Deserto Vermelho`,
   },
   plugins: [
