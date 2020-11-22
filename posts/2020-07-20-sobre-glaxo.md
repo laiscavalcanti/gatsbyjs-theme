@@ -4,8 +4,8 @@ title: Sobre Glaxo, de Hernán Ronsino
 description: O elemento natural mais presente em Glaxo é a terra.
 tags: ["literatura"]
 author: Deserto Vermelho
-image: ../src/static/assets/img/hernan.jpg
-imagePost: ../src/static/assets/img/hernan.jpg
+image: ../src/static/assets/img/images-07-20/hernan.jpg
+imagePost: ../src/static/assets/img/images-07-20/hernan.jpg
 templateKey: slideshow
 ---
 

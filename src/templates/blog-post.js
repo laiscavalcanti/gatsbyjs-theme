@@ -22,7 +22,7 @@ const BlogPost = ({ data, pageContext }) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        imagePost={post.frontmatter.imagePost}
+        image={post.frontmatter.image}
       />
       <S.PostWrapper>
       <PostImage imagePost={post.frontmatter.imagePost} />

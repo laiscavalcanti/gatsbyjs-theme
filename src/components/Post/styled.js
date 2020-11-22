@@ -52,7 +52,7 @@ export const PostTag = styled(Link)`
 `
 export const PostTitle = styled.h1`
   max-width: 35rem;
-  margin: 0rem 0.5rem 0.5rem 3.5rem;
+  margin: 0rem 2rem 0.5rem 3rem;
   padding: 0 1rem 0 1rem;
   font-family: "Share Tech Mono", monospace;
   font-size: 2.7rem;
@@ -73,8 +73,7 @@ export const PostTitle = styled.h1`
 `
 export const PostDescription = styled.h2`
   max-width: 35rem;
-  margin: 0rem 1.5rem 0.5rem 3.5rem;
-  padding: 0 1rem 0 1rem;
+  margin: 1rem 2rem 0.5rem 4rem;
   letter-spacing: 0rem;
   font-weight: 100;
   line-height: 1.5;
@@ -101,12 +100,12 @@ export const PostDescription = styled.h2`
 export const PostDate = styled.p`
   max-width: 35rem;
   height: auto;
+  text-align: end;
   color: var(--colorHover);
   font-size: 0.9rem;
   font-weight: 100;
   font-family: "Lato", sans-serif;
-  margin: 1.5rem 1.5rem 0.5rem 10rem;
-  padding: 0 1rem 0 1rem;
+  margin: 1.5rem 1.5rem 0.5rem 18.5rem;
   opacity: 0.7;
   &::selection {
     color: var(--colorSelection);
@@ -229,7 +228,7 @@ export const MainContent = styled.article`
   }
   blockquote {
     color: #fff;
-    border-left: 0.3rem solid #1fa1f2;
+    border-left: 0.3rem solid var(--colorHover);
     padding: 0 1.875rem;
     margin: 3.125rem auto;
   }

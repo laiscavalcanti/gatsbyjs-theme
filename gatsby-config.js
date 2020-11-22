@@ -6,6 +6,7 @@ module.exports = {
     title: `Deserto Vermelho`,
     description: `Um blog sobre literatura, historiografia, política e cinema.`,
     author: `Deserto Vermelho`,
+    siteUrl: `https://desertovermelho.netlify.app/`
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -71,11 +72,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Deserto Vermelhor`,
+        short_name: `Deserto Vermelho`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#be1622`,
+        theme_color: `#be1622`,
         display: `minimal-ui`,
         icon: `src/images/iconedeserto.png`, // This path is relative to the root of the site.
       },
