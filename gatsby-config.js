@@ -72,7 +72,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Deserto Vermelhor`,
+        name: `Deserto Vermelho`,
         short_name: `Deserto Vermelho`,
         start_url: `/`,
         background_color: `#be1622`,
