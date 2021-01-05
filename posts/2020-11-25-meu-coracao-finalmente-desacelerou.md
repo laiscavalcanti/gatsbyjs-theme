@@ -6,7 +6,7 @@ tags: ["literatura"]
 author: Deserto Vermelho
 image: ../src/static/assets/img/images-06-15/post4.jpg
 imagePost: ../src/static/assets/img/images-06-15/Power-Moshfegh.webp
-templateKey: slideshow
+templateKey: " "
 ---
 
 O livro de Otessa se constrói com um material que bebe dos seriados e das comédias românticas que buscam representar a cultura millennial, embora por se situar entre os anos 2000 e 2001 ele possa ser considerado um tipo de romance histórico.

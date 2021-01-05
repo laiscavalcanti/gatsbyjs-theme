@@ -19,7 +19,7 @@ const links = [
   },
   {
     label: "Teoria",
-    url: "/tags/politica/",
+    url: "/tags/teoria/",
     icon: "",
   },
   {
