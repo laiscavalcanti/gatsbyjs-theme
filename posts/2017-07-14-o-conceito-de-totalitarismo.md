@@ -1,5 +1,5 @@
 ---
-date: 2020-03-21
+date: 2017-07-14
 title: O conceito de totalitarismo é um beco sem saída
 description: Hannah Arendt é uma espécie de símbolo do pensamento democrático...
 tags: ["teoria"]
