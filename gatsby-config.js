@@ -2,6 +2,13 @@ require("dotenv").config()
 const queries = require("./src/utils/algolia_queries.js")
 
 module.exports = {
+  flags: {
+    DEV_SSR: false,
+    FAST_DEV: false,
+    PRESERVE_FILE_DOWNLOAD_CACHE: false,
+    PARALLEL_SOURCING: false,
+    PRESERVE_WEBPACK_CACHE: false,
+  },
   siteMetadata: {
     title: `Deserto Vermelho`,
     description: `Um blog sobre literatura, historiografia, política e cinema.`,
