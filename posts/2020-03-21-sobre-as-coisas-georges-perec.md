@@ -6,7 +6,7 @@ tags: ["literatura"]
 author: Deserto Vermelho
 image: ../src/static/assets/img/images-03-21/perec.jpg
 imagePost: ../src/static/assets/img/images-03-21/les-choses.jpg
-templateKey: slideshow
+templateKey: " "
 ---
 
 Parafraseando Auxlio Lacouture/Roberto Bolaño, poderíamos dizer que esta história é uma história de horror, mas não parecerá. Não parecerá porque esse é um dos narradores de Perec, um autor que sempre foi adepto do lúdico, da brincadeira, do desafio cerebral. Mas por trás do jogo, sem dúvidas há um universo tenebroso.

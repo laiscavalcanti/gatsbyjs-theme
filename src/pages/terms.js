@@ -1,14 +1,13 @@
 import React from "react"
-
 import Layout from "../components/Layout"
+import TermsUse from "../components/TermsUse"
 import SEO from "../components/seo"
 
-const TermsUse = () => (
+const TermsPage = () => (
   <Layout>
     <SEO title="Termos de Uso" />
-    <h1>Termos de Uso</h1>
-    <p>Aqui estão os termos de uso.</p>
+    <TermsUse />
   </Layout>
 )
 
-export default TermsUse
+export default TermsPage
